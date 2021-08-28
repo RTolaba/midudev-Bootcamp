@@ -19,7 +19,6 @@ const Header = (props) => {
  */
 
 const Part = (props) => {
-  console.log(props.numero);
   return<p>{props.nombre}, ejercicios:: {props.numero} </p>
 }
 
@@ -27,9 +26,8 @@ const Part = (props) => {
 //const Part = ({nombre}, {numero}) => <p>{nombre}, ejercicioss:{numero} </p> 
 
 const Content = (props) => {
-  console.log("como que undefined de nuevo")
+  
   console.log(props.course.parts[0].exercises);
-
   return (
     <div>
       <Part nombre={props.course.parts[0].name} numero={props.course.parts[0].exercises} ></Part> 
